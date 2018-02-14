@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Города</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+  <body>
+    <header>Города</header>
+    <section>
+        <div class='mapBlock'>
+            <div id="start" class='leftBlock'>
+                <button>Начать игру</button>
+            </div>
+            <div id="map" class='leftBlock'></div>    
+            <div id="summary" class='leftBlock'>
+                <div class="titleSummary"></div>
+                <div class='bodySummary'></div>
+                <div class="footerSummary">
+                    <button></button>
+                </div>
+            </div> 
+        </div>
+        <div id="chat">
+            <div>
+                <div id='chatbox'></div>
+                <div id='chatboxStatus'>Компьютер набирает сообщение...</div>
+                <div class='chatboxInput'>
+                    <div>
+                        <input type="text" name="qq" id="city" placeholder="Город"  autocomplete="off" />
+                        <span><img src="//i.imgur.com/cHidSVu.gif" /></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script src="js/index.js?v=4" type="text/javascript"></script>
+</body>
+</html>

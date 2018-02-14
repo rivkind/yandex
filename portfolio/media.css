@@ -1,0 +1,358 @@
+@media (max-width:1024px) {
+    header,#content,footer{
+        width: 1024px; 
+    }
+    header,header div.photo{
+        height: 768px; 
+    }
+    header div.photo{
+        margin-right: 95px;
+        width: 424px;
+    }
+    header p{
+        width: 464px;
+        margin-top: 419px;
+    }
+
+}
+@media (max-width:768px) {
+    .textBlock{
+        width: 384px;
+    }
+    header,#content,footer{
+        width: 768px;
+    }
+    header{
+        flex-direction: column;
+        height: 100%; 
+        padding-bottom:145px;
+    }
+    
+    header div.infoPerson,header div.photo,header p{
+        margin: 0 auto;
+    } 
+    header div.infoPerson{
+        order: 1;
+        padding-top: 97px;
+    }
+    header div.infoPerson h4,header div.infoPerson h2,header p{
+        text-align: center;
+    }
+    header div.photo{
+        order: 2;
+        width: 384px;
+        height:384px;
+        border-radius: 192px;
+        background-position-y: 35%;
+        background-position-x: 46%;
+    }
+    header p{
+        margin-top: 75px;
+        width:544px;
+    }
+    
+    #content{
+        padding-top:82px;
+    }
+    section{
+        width: 704px;
+    }
+    section ul.wishBlock li{
+        width:300px;
+        }
+    section ul.wishBlock li:first-child,section ul.wishBlock li:last-child{
+        width:388px;
+    }
+    .textBlock{
+        width: 100%;
+    }
+    section.myWork h2{
+        margin-bottom: 64px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 65px;
+    }
+    article:nth-child(even) .textBlock {
+        order: 1;
+    }
+    article:nth-child(odd) .textBlock {
+        order: 1;
+    }
+    article:nth-child(even) .mySlider {
+        order: 2;
+        margin-right: 0;
+    }
+    article:nth-child(odd) .mySlider {
+        order: 2;
+        margin-left: 0;
+    }
+    article .textBlock p{
+        top:0;
+        left: 352px;
+        height: 147px;
+    }
+    .mySlider{
+        margin-top: 90px;
+        width: 704px;
+        height: 528px;
+        flex-direction: column;
+        
+    }
+    .myWorkSlider{
+        height: 496px;
+        width: 704px;
+    }
+    article:nth-child(even) .myWorkSlider{
+        order: 1;
+        margin-right: 0; 
+    }
+    article:nth-child(odd) .myWorkSlider{
+        order: 1; 
+        margin-left: 0;
+    }
+    article:nth-child(even) .controlsWork{
+        order: 2; 
+    }
+    article:nth-child(odd) .controlsWork{
+        order: 2; 
+    }
+    .controlsWork{
+        margin-top: 24px;
+        height: 8px;
+        line-height: 8px;
+        font-size: 8px;
+    }
+    .controlsWork label{
+        display: inline-block;
+        margin-bottom: 0;
+        margin-right: 24px;
+    }
+    .controlsWork label:last-child{
+        margin-right: 0;
+    }
+    section:last-child {
+        padding-bottom: 88px;
+    }
+
+    footer{
+        padding-top: 33px;
+    }
+
+    footer h2{
+        margin-bottom: 21px;
+    }
+    
+    footer > div{
+        width: 100%;
+        padding: 0 32px;
+    }
+    
+    footer div.textBlock{
+        width:100%;
+        flex-direction: row;
+        margin-right: 0;
+    }
+    footer div.footerDescription{
+        width:384px;
+        margin-right: 96px;
+    }
+    footer div.footerDescription div{
+       display: none;
+    }
+    footer ul.socialBlock{
+        align-self: flex-start;
+        height: 147px;
+    }
+    .formBlock{
+        width: 100%;
+        padding-bottom: 94px;
+    }
+    .slides_work {
+        height: 496px;
+        width: 704px;
+    }
+}
+@media (max-width:336px) {
+    header,#content,footer{
+        width: 336px; 
+    }
+    header{
+        padding-bottom:42px;
+    }
+    header div.infoPerson{
+        margin-top: 33px;
+        width: 100%;
+    }
+    header h4{
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    header h2{
+        margin-bottom: 21px;
+               
+    }
+    header div.photo{
+        width: 144px;
+        height:144px;
+        border-radius: 72px;
+        background-size: 450px;
+    }
+    header p{
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        width:305px;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 40px; 
+    }
+    
+    
+     #content{
+        padding-top:91px;
+    }
+    section{
+        width: 304px;
+    }
+    section h2{
+        margin-bottom: 13px;
+    }
+    section ul.wishBlock{
+        height:304px;
+        margin-bottom: 24px;
+        border-radius: 4px;
+    }
+    section ul.wishBlock li{
+        height:304px;
+        float:none;
+        height: 304px;
+        padding: 25px 24px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+    section ul.wishBlock li,section ul li:first-child,section ul.wishBlock li:last-child{
+        width:100%;
+        float:none;
+        height: 304px;
+        padding: 25px 24px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    section ul.wishBlock li p{
+        position: static;
+        padding-right: 0px;
+        width:250px;
+    }
+    section .controls{
+        display:block;
+    }
+    #slide1:checked ~ .controls label:nth-of-type(1),
+    #slide2:checked ~ .controls label:nth-of-type(2),
+    #slide3:checked ~ .controls label:nth-of-type(3),
+    #slide4:checked ~ .controls label:nth-of-type(4),
+    #slide5:checked ~ .controls label:nth-of-type(5) {
+        background: #000;
+        
+    }
+    .controls label {
+        background: #DD3E18;
+        cursor: pointer;
+        display: inline-block;
+        height: 8px;
+        margin-right: 24px;
+        width: 8px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transition: background ease-in-out .5s;
+        -moz-transition: background ease-in-out .5s;
+        -o-transition: background ease-in-out .5s;
+        transition: background ease-in-out .5s;
+    }
+    .controls label:last-child{
+        margin-right: 0;
+    }
+    .slides {
+        z-index: 0;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+        -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+        -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+        transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    }
+    #slide1:checked ~ ul > .slide1,
+    #slide2:checked ~ ul > .slide2,
+    #slide3:checked ~ ul > .slide3,
+    #slide4:checked ~ ul > .slide4,
+    #slide5:checked ~ ul > .slide5 {
+        opacity: 1;
+        z-index: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+    section.myWork h2{
+        margin-bottom: 38px;
+    }
+    
+    .mySlider{
+        width: 304px;
+        height: 248px;
+        margin-top: 0;
+        margin-top: 15px;
+    }
+    .myWorkSlider{
+        height: 216px;
+        width: 100%;
+    }
+    article a{
+       display: block;
+       margin-bottom: 16px;
+    }
+    article .textBlock p{
+        position: static;
+    }
+
+    footer{
+        padding-top: 43px;
+    }
+    footer h2{
+        margin-bottom: 15px;
+    }
+    footer div.textBlock{
+        flex-direction: column;
+        
+    }
+    
+    footer div.footerDescription{
+        order:2;
+    }
+    footer ul.socialBlock{
+        order:1;
+        margin-bottom: 9px;
+        
+    }
+    footer div.footerDescription{
+        width:304px;
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+    .slides_work {
+        height: 216px;
+        width: 304px;
+    }
+}

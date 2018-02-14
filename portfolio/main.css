@@ -1,0 +1,398 @@
+@font-face{
+    font-family: 'Helvetica-Bold';
+    src: url('font/9206.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url('font/Georgia.eot');
+    src: url('font/Georgia.eot?#iefix') format('embedded-opentype'),
+    url('font/Georgia.woff') format('woff'),
+    url('font/georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Common style */
+*,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    text-align: left; 
+}
+body{
+    background-color: #eee;
+}
+h2{
+    font-size: 40px;
+    line-height: 48px;
+}
+h4{
+    font-size: 24px;
+    line-height: 29px;
+}
+h2,h4,.fileContainer,button{
+    font-family: Helvetica-Bold;
+}
+header,#content,footer{
+    width: 1440px;
+    margin: 0px auto;
+}
+.textBlock{
+    width: 304px;
+}
+/* Common style */
+
+/* Header block */
+header{
+    background: #082841;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+header,header div.photo{
+    height: 672px;
+}
+header div.photo{
+    order: 1;
+    margin-right: 96px;
+    background: url("img/1.jpg") no-repeat center center transparent;
+    width: 552px;
+}
+header div.infoPerson{
+    order: 2;
+    padding-top: 65px;
+    width:400px;
+}
+
+header h4{
+    margin-bottom: 11px;
+}
+header h2{
+    margin-bottom: 39px;
+}
+
+header p{
+    order: 3;
+    width: 544px;
+    margin-top: 387px;
+    margin-left: -400px;
+}
+/* Header block */
+
+#content{
+    background: #fff;
+    color:#000;
+    padding-top:106px;
+}
+section,footer>div{
+    width: 944px;
+    margin: 0 auto;
+    padding-bottom:129px;
+}
+section h2{
+    margin-bottom: 38px;
+}
+section ul.wishBlock{
+    height:448px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+section ul.wishBlock li{
+    width:306px;
+    height: 216px;
+    position: relative;
+    padding: 25px 32px;
+    display: block;
+    background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+    border-radius: 4px;
+}
+section ul.wishBlock li:first-child,section ul.wishBlock li:last-child{
+    width:618px;
+}
+section ul.wishBlock li:first-child{
+    margin-bottom: 16px;
+}
+
+section ul.wishBlock li p{
+    position: absolute;
+    bottom: 25px;
+    left: 32px; 
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 32px;
+    margin-top: 24px;
+}
+input[type=radio]{
+    display: none;
+}
+
+section .controls{
+    display:none;
+    text-align: center;
+    font-size: 8px;
+    line-height: 8px;
+}
+.controls1 label {
+    background: #DD3E18;
+    cursor: pointer;
+    display: block;
+    height: 8px;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+    margin-bottom: 16px;
+}
+.controlsWork label:last-child{
+    margin-bottom: 0;
+}
+
+
+section.myWork h2{
+    margin-bottom: 63px;
+}
+section:last-child{
+    padding-bottom: 135px;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 145px;
+}
+article:last-child{
+    margin-bottom: 0;
+}
+article .textBlock{
+    position: relative;
+}
+article .textBlock p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+article h4{
+    margin-bottom: 8px;
+}
+article a{
+    color: #DD3E18;
+    text-decoration: none;
+}
+article .mySlider{
+    position: relative;
+}
+article:nth-child(even) .mySlider {
+    order: 1;
+    margin-right: 72px;
+}
+article:nth-child(odd) .mySlider {
+    order: 2;
+    margin-left: 72px;
+}
+article:nth-child(even) .textBlock {
+    order: 2;
+}
+article:nth-child(odd) .textBlock {
+    order: 1;
+}
+.mySlider{
+    width: 568px;
+    height: 384px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.myWorkSlider{
+    height: 384px;
+    width: 544px;
+    box-shadow: 0px 10px 20px  2px  rgba(0, 0, 0, .2);
+    position: relative;
+    overflow: hidden;
+}
+article:nth-child(even) .myWorkSlider{
+    order: 1;
+    margin-right: 16px; 
+}
+article:nth-child(odd) .myWorkSlider{
+    order: 2; 
+    margin-left: 16px;
+}
+article:nth-child(even) .controlsWork{
+    order: 2; 
+}
+article:nth-child(odd) .controlsWork{
+    order: 1; 
+}
+
+
+/* Footer block */
+footer{
+    background-image: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+    height: 795px;
+    padding-top: 81px;
+}
+footer h2{
+    margin-bottom: 61px;
+}
+footer>div>div{
+    float: left;
+}
+
+footer div.textBlock{
+    display: flex;
+    flex-direction: column;
+    margin-right: 96px;
+}
+footer div.footerDescription{
+    order:1;
+}
+footer ul.socialBlock{
+    order:2;
+    height: 147px;
+    margin-bottom: 19px;
+}
+footer ul.socialBlock li{
+    display: block;
+    white-space:nowrap;
+    margin-bottom: 12px;
+    line-height: 32px;
+   
+    vertical-align: top;
+}
+footer ul.socialBlock a{
+    color: #DD3E18;
+    text-decoration: none;
+}
+footer ul.socialBlock a:hover{
+   text-decoration: underline;
+}
+footer .checkbox-custom {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+    margin-right: 12px;
+    background-color: #000;
+    opacity: 0.1;
+}
+
+footer .checkbox-custom,.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+footer div.footerDescription div{
+    margin-top:15px;
+}
+input,textarea {
+    width: 100%;
+    border: 1px;
+    padding: 11px 16px 13px;
+    font-size: 16px;
+}
+input,textarea,button{
+    border-radius: 4px;
+}
+input{
+    margin-bottom: 24px;
+}
+textarea{
+    height: 192px;
+    resize: none;
+    margin-bottom: 16px;
+}
+input[type=checkbox]{
+    display: none;
+}
+.formBlock{
+    width: 544px;
+}
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+    color: #DD3E18;
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    filter: alpha(opacity=0);
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    cursor: pointer;
+}
+
+.fileContainer i{
+    margin-right: 11px;
+}
+button{
+    display: block;
+    width: 100%;
+    margin-top: 32px;
+    padding: 13px 0;
+    color: white;
+    background-color: #DD3E18;
+    border: 0;
+    text-align: center;
+}
+/* Footer block */
+
+.slide5 { background-image: url("img/openball1.jpg"); }
+.slide6 { background-image: url("img/openball2.jpg"); }
+.slide7 { background-image: url("img/openball3.jpg"); }
+.slide8 { background-image: url("img/openball4.jpg"); }
+.slide9 { background-image: url("img/bonus1.jpg"); }
+.slide10 { background-image: url("img/bonus2.jpg"); }
+.slide11 { background-image: url("img/fl1.jpg"); }
+.slide12 { background-image: url("img/fl2.jpg"); }
+
+#slide11:checked ~ .controls1 label:nth-of-type(1),
+#slide12:checked ~ .controls1 label:nth-of-type(2),
+#slide9:checked ~ .controls1 label:nth-of-type(1),
+#slide10:checked ~ .controls1 label:nth-of-type(2),
+#slide5:checked ~ .controls1 label:nth-of-type(1),
+#slide6:checked ~ .controls1 label:nth-of-type(2),
+#slide7:checked ~ .controls1 label:nth-of-type(3),
+#slide8:checked ~ .controls1 label:nth-of-type(4) {
+    background: #000;
+}
+
+
+.slides_work {
+    z-index: 0;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 384px;
+    width: 544px;
+}
+
+#slide11:checked ~ .myWorkSlider > .slide11,
+#slide12:checked ~ .myWorkSlider > .slide12,
+#slide9:checked ~ .myWorkSlider > .slide9,
+#slide10:checked ~ .myWorkSlider > .slide10,
+#slide5:checked ~ .myWorkSlider > .slide5,
+#slide6:checked ~ .myWorkSlider > .slide6,
+#slide7:checked ~ .myWorkSlider > .slide7,
+#slide8:checked ~ .myWorkSlider > .slide8 {
+    opacity: 1;
+    z-index: 1;
+}
